@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Names Exercise
+In this exercise you'll create a simple table to display various names with a calculated score. The requirements are as follows:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Rules of the test:
+- Use a Frontend Framework of your choice: (Angular, Vue, React, Ember...)
+- For your convenience we have a base install of Angular, Vue, React, Ember pre installed in this repo.
+- We run on node >14
 
-## Available Scripts
+### Application Requirements
+- Create a text input for adding names to the table.
+  - Names can be submitted through both/either a keypress (enter) or button click.
+- Create a table with columns for row number, name, & score. 
+  - This table should show any names added through the input in alphabetical order. 
+  - The third column, score, should display a value calculated on the name.
+    - Scoring is defined in the section [below](#scoring-calculations).  
+- Create a footer at the bottom of the table with a value that is the sum of the entire score column.
+- Add the ability to remove any row in the list
 
-In the project directory, you can run:
+### Bonus Objectives
+- Extra: Create a button that bulk adds the provided list of names to the table `names.json`
+- Extra: add the ability to multi sort by name and score
 
-### `npm start`
+### Scoring Calculations:
+ - The score is defined as: the sum of each alphabetic character of the name multiplied by it's (index + 1) 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ - For example in `names.json`, the name `COLIN` is 938th in the list after being sorted. It has an alphabetic value of `3 + 15 + 12 + 9 + 14 = 53`, thus the score would be `938 * 53 = 49714`.
+ - The example of `COLIN` 
+   - `C` is the 3rd letter in the alphabet 
+   - `O` is the 15th letter in the alphabet
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Notes
+If you have any extra time feel free to add any extra features or improvements you would like.
